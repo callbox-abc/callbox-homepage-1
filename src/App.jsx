@@ -358,10 +358,10 @@ function Hero() {
           </div>
 
           <div className="mt-14">
-            <p className="text-xs text-white/40">Trusted by sales teams at</p>
+            <p className="text-xs text-white/60">Trusted by sales teams at</p>
             <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-3">
               {TRUST_LOGOS.map((name) => (
-                <span key={name} className="text-sm font-semibold tracking-wide text-white/35">
+                <span key={name} className="text-sm font-semibold tracking-wide text-white/60">
                   {name}
                 </span>
               ))}
@@ -432,7 +432,7 @@ function ServicesSection() {
               </div>
               <h3 className="mt-5 text-lg font-semibold text-[#0b0b0d]">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[#303035]/75">{s.desc}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#0b0b0d]/60 group-hover:text-[#0b0b0d]">
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#0b0b0d]/65 group-hover:text-[#0b0b0d]">
                 Learn more <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </div>
@@ -496,13 +496,13 @@ function ResultsSection() {
         <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {RESULTS.map((r) => (
             <div key={r.tag} className="flex flex-col rounded-2xl bg-white p-8 shadow-[0_2px_20px_rgba(0,0,0,0.05)]">
-              <p className="text-sm text-[#0b0b0d]/50">{r.tag}</p>
+              <p className="text-sm text-[#0b0b0d]/65">{r.tag}</p>
               <p className="mt-4 text-4xl font-bold tracking-tight text-[#0b0b0d]">{r.stat}</p>
               <p className="mt-1 text-sm text-[#303035]/70">{r.statLabel}</p>
               <div className="mt-6 flex-1 border-t border-[#0b0b0d]/10 pt-6">
                 <Quote className="h-4 w-4 text-[#75c7fa]" />
                 <p className="mt-2 text-sm italic leading-relaxed text-[#303035]">&ldquo;{r.quote}&rdquo;</p>
-                <p className="mt-3 text-xs font-semibold text-[#0b0b0d]/60">{r.person}</p>
+                <p className="mt-3 text-xs font-semibold text-[#0b0b0d]/65">{r.person}</p>
               </div>
             </div>
           ))}
@@ -553,7 +553,7 @@ function FAQItem({ item, open, onToggle }) {
       >
         <span className="text-base font-semibold text-[#0b0b0d]">{item.q}</span>
         <ChevronDown
-          className={`h-5 w-5 flex-shrink-0 text-[#0b0b0d]/50 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`h-5 w-5 flex-shrink-0 text-[#0b0b0d]/65 transition-transform ${open ? "rotate-180" : ""}`}
         />
       </button>
       {open && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#303035]/75">{item.a}</p>}
@@ -605,7 +605,7 @@ function FinalCTA() {
           </PrimaryButton>
           <GhostButton dark>Talk to Sales</GhostButton>
         </div>
-        <p className="mt-6 text-xs text-white/35">No contracts. No setup fees. Cancel anytime.</p>
+        <p className="mt-6 text-xs text-white/60">No contracts. No setup fees. Cancel anytime.</p>
       </Container>
     </section>
   );
@@ -625,14 +625,14 @@ function Footer() {
               </span>
               <span className="text-lg font-semibold tracking-tight">Callbox</span>
             </div>
-            <p className="mt-4 flex items-center gap-2 text-sm text-white/40">
+            <p className="mt-4 flex items-center gap-2 text-sm text-white/60">
               <MapPin className="h-4 w-4" /> Global B2B lead generation
             </p>
           </div>
 
           <div>
             <p className="text-sm font-semibold text-white">Services</p>
-            <ul className="mt-4 space-y-2 text-sm text-white/50">
+            <ul className="mt-4 space-y-2 text-sm text-white/60">
               <li>Lead Generation</li>
               <li>Appointment Setting</li>
               <li>ABM</li>
@@ -642,7 +642,7 @@ function Footer() {
 
           <div>
             <p className="text-sm font-semibold text-white">Company</p>
-            <ul className="mt-4 space-y-2 text-sm text-white/50">
+            <ul className="mt-4 space-y-2 text-sm text-white/60">
               <li>About Us</li>
               <li>Careers</li>
               <li>Case Studies</li>
@@ -653,14 +653,14 @@ function Footer() {
           <div>
             <p className="text-sm font-semibold text-white">Follow</p>
             <div className="mt-4 flex gap-3">
-              <Linkedin className="h-5 w-5 text-white/50" />
-              <Twitter className="h-5 w-5 text-white/50" />
-              <Youtube className="h-5 w-5 text-white/50" />
+              <Linkedin className="h-5 w-5 text-white/60" />
+              <Twitter className="h-5 w-5 text-white/60" />
+              <Youtube className="h-5 w-5 text-white/60" />
             </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/35">
+        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/60">
           {"\u00a9 2026 Callbox Inc. Mockup for internal review \u2014 sample content only."}
         </div>
       </Container>
